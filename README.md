@@ -14,10 +14,11 @@ How to test implemtation?
         'python GSRShufflingAlgorithm.py 26 4 20'
         when a image plot will open, close first to see for second and so on
   2. testing via jupyter notebook
-         Call 'checkingGSRImplementation(startDeckSize,n,shuffleSize)' after running previous methods
-              where startDeckSize: size of staring deck
-                n            : it is no. of time startDeckSize muliply by 2 , i.e 26,52,104,208, so n here is 1,2,3,4
-                shuffleSize  : number fo shuffles to perform
+         Call 'checkingGSRImplementation(startDeckSize,totalDecks,shuffleSize)' after running previous methods
+              where 
+              1.  startDeckSize: size of staring deck
+              2.  totalDecks   : it is no. of time startDeckSize muliply by 2 , i.e 26,52,104,208, so n here is 1,2,3,4
+              3.  shuffleSize  : number fo shuffles to perform
              i.e checkingGSRImplementation(26,4,20)
   
   
@@ -25,10 +26,10 @@ Reporting Findings:
   After looking at plots we can see that after few shuffles there is steep increase in the graph after which the randomness values donot change much
   So we can assume that after steep change or we can say where we can find 'elbow' in the graph, that is minimum amount of shuffles required to fully randomized the   cards.
   
-  ForDeck Size 26, Minimium Shuflle as per Bayer and Diaconis(3/2*(log2(n)) is 4 and Shuffle where Elbow In Graph is 4-5
-  ForDeck Size 52, Minimium Shuflle as per Bayer and Diaconis(3/2*(log2(n)) is 8 and Shuffle where Elbow In Graph is 8-9
-  ForDeck Size 104, Minimium Shuflle as per Bayer and Diaconis(3/2*(log2(n)) is 10 and Shuffle where Elbow In Graph is 10-11
-  ForDeck Size 208, Minimium Shuflle as per Bayer and Diaconis(3/2*(log2(n)) is 11 and Shuffle where Elbow In Graph is 10-11
+  1.  ForDeck Size 26, Minimium Shuflle as per Bayer and Diaconis(3/2*(log2(n)) is 4 and Shuffle where Elbow In Graph is 4-5
+  2.  ForDeck Size 52, Minimium Shuflle as per Bayer and Diaconis(3/2*(log2(n)) is 8 and Shuffle where Elbow In Graph is 8-9
+  3.  ForDeck Size 104, Minimium Shuflle as per Bayer and Diaconis(3/2*(log2(n)) is 10 and Shuffle where Elbow In Graph is 10-11
+  4.  ForDeck Size 208, Minimium Shuflle as per Bayer and Diaconis(3/2*(log2(n)) is 11 and Shuffle where Elbow In Graph is 10-11
   
   So after observing above results we can say that (3/2*(log2(n)) is a good approximation for optimal number of shuffles
   
