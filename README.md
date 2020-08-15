@@ -25,11 +25,10 @@ Reporting Findings:
   After looking at plots we can see that after few shuffles there is steep increase in the graph after which the randomness values donot change much
   So we can assume that after steep change or we can say where we can find 'elbow' in the graph, that is minimum amount of shuffles required to fully randomized the   cards.
   
-  Deck Size         Minimium Shuflle as per Bayer and Diaconis(3/2*(log2(n))        Shuffle where Elbow In Graph
-  26                4                                                               4-5
-  52                8                                                               8-9 
-  104               10                                                              10-11
-  208               11                                                              10-11
+  ForDeck Size 26, Minimium Shuflle as per Bayer and Diaconis(3/2*(log2(n)) is 4 and Shuffle where Elbow In Graph is 4-5
+  ForDeck Size 52, Minimium Shuflle as per Bayer and Diaconis(3/2*(log2(n)) is 8 and Shuffle where Elbow In Graph is 8-9
+  ForDeck Size 104, Minimium Shuflle as per Bayer and Diaconis(3/2*(log2(n)) is 10 and Shuffle where Elbow In Graph is 10-11
+  ForDeck Size 208, Minimium Shuflle as per Bayer and Diaconis(3/2*(log2(n)) is 11 and Shuffle where Elbow In Graph is 10-11
   
   So after observing above results we can say that (3/2*(log2(n)) is a good approximation for optimal number of shuffles
   
